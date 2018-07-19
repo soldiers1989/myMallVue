@@ -6,29 +6,22 @@
         <div class="topdiv">
         <span id="title"></span>
         <span id="titlecontent">鱿鱼基金</span>
+
         </div>
       </div>
     </div>
 
-    <div id="bannern">
-      <swiper :aspect-ratio="300/800" >
-        <swiper-item class="swiper-demo-img" v-for="(item, index) in $store.state.bannerList" :key="index">
-          <img :src="item.picture">
-        </swiper-item>
-      </swiper>
-    </div>
+    <banner></banner>
 
   </div>
 </template>
 
 <script>
-import { Group, Cell,Panel  } from 'vux'
+import banner from '@/components/banner/banner'
 import axios from 'axios'
 export default {
   components: {
-    Group,
-    Cell,
-    Panel
+    banner
   },
   data () {
     return {

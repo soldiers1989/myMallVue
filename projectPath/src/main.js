@@ -1,5 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+
 import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
@@ -7,7 +8,6 @@ import App from './App'
 import Home from './components/HelloFromVux'
 import store from './vuex'
 import { XHeader,Grid, GridItem,Swiper,SwiperItem } from 'vux'
-
 Vue.component('x-header', XHeader)
 Vue.component('grid', Grid)
 Vue.component('grid-item', GridItem)

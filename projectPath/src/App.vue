@@ -17,3 +17,4 @@ body {
   background-color: #fbf9fe;
 }
 </style>
+<style src="../static/font/iconfont.css" lang="css"></style>
