@@ -12,7 +12,7 @@ function resolve (dir) {
 let webpackConfig = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/index.js'
+    app: './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
