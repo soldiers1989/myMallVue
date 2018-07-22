@@ -9,6 +9,7 @@
 
         </div>
       </div>
+      <tab-list></tab-list>
     </div>
 
     <banner></banner>
@@ -18,10 +19,12 @@
 
 <script>
 import banner from '@/components/banner/banner'
+import tabList from '@/pages/home/tabList'
 import axios from 'axios'
 export default {
   components: {
-    banner
+    banner,
+    tabList
   },
   data () {
     return {

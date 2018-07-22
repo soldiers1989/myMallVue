@@ -3,10 +3,11 @@
 
 import Vue from 'vue'
 import FastClick from 'fastclick'
-import VueRouter from 'vue-router'
 import App from './App'
-import Home from './components/HelloFromVux'
+import Home from './pages/home/HelloFromVux'
+import VueRouter from 'vue-router'
 import store from './vuex'
+import router from '@/router'
 import { XHeader,Grid, GridItem,Swiper,SwiperItem } from 'vux'
 Vue.component('x-header', XHeader)
 Vue.component('grid', Grid)
@@ -14,21 +15,11 @@ Vue.component('grid-item', GridItem)
 Vue.component('swiper', Swiper)
 Vue.component('swiper-item', SwiperItem)
 
-Vue.use(VueRouter)
-
-const routes = [{
-  path: '/',
-  component: Home
-}]
-
-const router = new VueRouter({
-  routes
-})
 
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
-
+Vue.use(VueRouter)
 /* eslint-disable no-new */
 new Vue({
   router,
