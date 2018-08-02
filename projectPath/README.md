@@ -1,21 +1,41 @@
-# y
+#demo
 
-> A Vue.js project
+##标题demo
+#标题一
+##标题二
+###标题三
+####标题四
+#####标题五
+######标题六
+（对文档信息做表示）
+标题一= 
+===
+##段落demo
 
-## Build Setup
+我是黄鹏，我喜欢github开源社区。博客园。
+    我的qq号是296866035  
+    sad
 
-``` bash
-# install dependencies
-npm install
+分段落：①空一行②末尾空两格
+##强调demo
+我是**粗体**文字样式  
+我是*斜体*文字样式
+我是***加粗加倾斜***样式  
+我是~~删除线~~文字样式  
+我是__粗体__文字样式    
+我是_斜体_文字样式  
+我是___加粗加倾斜___样式  
+##列表demo1
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+###无需列表
+黄鹏的个人信息
+* name:huanpeng 
+  - firstName:huang
+  - lastName:peng
+* qq:296866035
+- name:huanpeng 
+- qq:296866035
+###有序列表
+黄鹏的个人信息
+1. name:huanpeng 
+2. qq:296866035
