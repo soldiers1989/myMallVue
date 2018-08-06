@@ -21,6 +21,17 @@
           <li><i class="icon iconfont icon-licai" style="padding-left: 0.04rem;color: #0F51D2;"></i>定期理财</li>
           <li><i class="icon iconfont icon-wandacaifu-wode-changjianwenti-huoqichanpin-xuanzhong" style="padding-left: 0.04rem;color:#F8BB0B"></i>快速购买</li>
         </ul>
+          <img src="../../../static/images/earth.png" class="mimg"/>
+        <div class="scolldiv">
+          <swiper auto height="30px" direction="vertical" :interval=2000 class="text-scroll" :show-dots="false" :loop="true">
+            <swiper-item><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+            <swiper-item><p>基本世神 兑换《传奇世界H5》畅玩级礼包 消耗30金币</p><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+            <swiper-item><p>零哥章魚 完成传奇世界H5-王者归来任务 获得30金币</p><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+            <swiper-item><p>做迎而為 兑换【饿了么】畅享美食红包 消耗20金币</p><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+            <swiper-item><p>只知道不知道 兑换【饿了么】畅享美食红包 消耗20金币</p><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+            <swiper-item><p>基本世神 兑换《传奇世界H5》畅玩级礼包 消耗30金币</p><p>义务爱了 完成传奇世界H5-王者归来任务 获得20金币</p></swiper-item>
+          </swiper>
+        </div>
       </div>
     </div>
 </template>
@@ -54,7 +65,7 @@ ul{
   }
   div.tabCard{
     width: 96%;
-    height: 1rem;
+    height: 1.3rem;
     background: #fff;
     margin: 0 auto;
     position: relative;
@@ -64,6 +75,7 @@ ul{
    color: #000;
    position: relative;
    top: 0.5rem;
+   border-bottom: 1px solid #ead9d9;
  }
 div.tabCard ul li{
   width:23%;
@@ -73,5 +85,18 @@ div.tabCard ul li i{
   top: -0.5rem;
   font-size: 0.4rem;
 }
-
+img.mimg{
+  width: 0.3rem;
+  position: relative;
+  top: -0.3rem;
+  left: 0.1rem;
+}
+div.scolldiv{
+  font-size: 0.1rem;
+  position: absolute;
+  top: 0.9rem;
+  left:0.5rem;
+  height:0.4rem;
+  width:88%
+}
 </style>

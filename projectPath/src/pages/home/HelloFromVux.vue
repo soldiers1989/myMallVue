@@ -13,18 +13,20 @@
     </div>
 
     <banner></banner>
-
+    <pdt></pdt>
   </div>
 </template>
 
 <script>
 import banner from '@/components/banner/banner'
 import tabList from '@/pages/home/tabList'
+import pdt from '@/pages/home/pdt'
 import axios from 'axios'
 export default {
   components: {
     banner,
-    tabList
+    tabList,
+    pdt
   },
   data () {
     return {
@@ -67,6 +69,8 @@ export default {
     position: fixed;
     height: 0.4rem;
     width: 100%;
+    background: linear-gradient(90deg, #FFB600 3%, #FF8750 96%);
+    z-index: 100;
   }
 .sea{
   width: 100%;
