@@ -9,12 +9,13 @@ import VueRouter from 'vue-router'
 import store from './vuex'
 import router from '@/router'
 import { XHeader,Grid, GridItem,Swiper,SwiperItem } from 'vux'
+import config from '@/config/configuration.js'
+
 Vue.component('x-header', XHeader)
 Vue.component('grid', Grid)
 Vue.component('grid-item', GridItem)
 Vue.component('swiper', Swiper)
 Vue.component('swiper-item', SwiperItem)
-
 
 FastClick.attach(document.body)
 
@@ -24,5 +25,10 @@ Vue.use(VueRouter)
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  created(){
+    window.$config = config
+  },
+  
+ 
 }).$mount('#app-box')

@@ -32,8 +32,22 @@
 </template>
 
 <script>
+import productService from '@/services/productService.js'
     export default {
-        name: "pdt"
+        name: "pdt",
+        mounted(){
+          /**
+           * 查询热点投资产品
+           */
+          var param = {
+              "recommend_type":"4",
+              "page":1,
+              "numPerPage":3
+          }
+          productService.queryCommendProduct(param,function(data){
+            console.log(data);
+          },{})
+        }
     }
 </script>
 

@@ -76,7 +76,34 @@
  这个代码中是用来声明变量是`var a = 10`,打印变量内容`console.log(a)`。
 
 
+# demo3
+
+## 水平分割线
+
+ 1. <hr>aaa
+ 2. ---
+ 3. ***
+ 4. ___
+
+ ##  html代码
+
+ <p align='center'>Hello world</p>
+
+ <img   src='https://www.baidu.com/img/bd_logo1.png'/>
+
+ ## 表格demo  
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+## 混合强调样 式
+
+**~~删除加粗~~**
+
  [百度]: http://www.baidu.com
  [baidu]:https://www.baidu.com/img/bd_logo1.png?where=super
 
- [a]:111
+ [a]:113
