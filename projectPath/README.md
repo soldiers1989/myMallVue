@@ -99,7 +99,7 @@
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-## 混合强调样 式
+## 混合强调样 gigi式
 
 **~~删除加粗~~**
 
