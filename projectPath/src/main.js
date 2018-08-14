@@ -10,7 +10,7 @@ import store from './vuex'
 import router from '@/router'
 import { XHeader,Grid, GridItem,Swiper,SwiperItem } from 'vux'
 import config from '@/config/configuration.js'
-
+import filters from '@/filter'
 Vue.component('x-header', XHeader)
 Vue.component('grid', Grid)
 Vue.component('grid-item', GridItem)
@@ -22,6 +22,8 @@ FastClick.attach(document.body)
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 /* eslint-disable no-new */
+//加载过滤器
+Object.keys(filters).forEach((key) => { Vue.filter(key, filters[key]) })
 new Vue({
   router,
   store,

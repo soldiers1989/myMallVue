@@ -3,7 +3,7 @@
     <div class="finacial">
       <h1>有鱼宝：闲钱理财专家</h1>
       <p>收益稳定|想用随时存取|宝内金额可购买基金</p>
-      <p class="tab">4.098%</p>
+      <p class="tab">{{hotFinan[0].annual_profit}}%</p>
       <p class="ared">最高七日年华收益率</p>
       <p><a>立即购买</a></p>
     </div>
@@ -11,9 +11,14 @@
       <h1>固定理财</h1>
       <div class="pdt_list">
       <ul >
-        <li product_id="191311" product_code="004417"><h5>兴全货币B</h5><strong>3.99<small>%</small></strong><p>七日年化收益</p></li>
-        <li product_id="191637" product_code="392002"><h5>中海货币基金B级</h5><strong>3.51<small>%</small></strong><p>七日年化收益</p></li>
-        <li product_id="190889" product_code="003003"><h5>华夏现金</h5><strong>3.50<small>%</small></strong><p>七日年化收益</p></li>
+        <li v-for="item in hotFinan" :product_id="item.product_id" :product_code="item.product_code" >
+          <div v-if="item.fund_type==10300">
+          <h5>{{item.product_name}}</h5><strong>{{item.annual_profit}}<small>%</small></strong><p>七日年化收益</p>
+          </div>
+          <div v-else>
+              <h5>{{item.product_name}}</h5><strong>{{item.yieldrate1m}}<small>%</small></strong><p>近一月收益</p>
+          </div>
+        </li>
       </ul>
       </div>
     </div>
@@ -21,9 +26,14 @@
       <h1>热点投资</h1>
       <div class="pdt_list">
         <ul >
-          <li product_id="191311" product_code="004417"><h5>兴全货币B</h5><strong>3.99<small>%</small></strong><p>七日年化收益</p></li>
-          <li product_id="191637" product_code="392002"><h5>中海货币基金B级</h5><strong>3.51<small>%</small></strong><p>七日年化收益</p></li>
-          <li product_id="190889" product_code="003003"><h5>华夏现金</h5><strong>3.50<small>%</small></strong><p>七日年化收益</p></li>
+         <li v-for="item in hotFinan" :product_id="item.product_id" :product_code="item.product_code" >
+          <div v-if="item.fund_type==10300">
+          <h5>{{item.product_name}}</h5><strong>{{item.annual_profit}}<small>%</small></strong><p>七日年化收益</p>
+          </div>
+          <div v-else>
+              <h5>{{item.product_name}}</h5><strong>{{item.yieldrate1m}}<small>%</small></strong><p>近一月收益</p>
+          </div>
+        </li>
         </ul>
       </div>
     </div>
@@ -35,7 +45,13 @@
 import productService from '@/services/productService.js'
     export default {
         name: "pdt",
+        data(){
+          return {
+            "hotFinan":[]
+          }
+        },
         mounted(){
+          var that = this;
           /**
            * 查询热点投资产品
            */
@@ -45,7 +61,8 @@ import productService from '@/services/productService.js'
               "numPerPage":3
           }
           productService.queryCommendProduct(param,function(data){
-            console.log(data);
+           that.hotFinan = data.data.results[0].data;
+           console.log(that.hotFinan)
           },{})
         }
     }
