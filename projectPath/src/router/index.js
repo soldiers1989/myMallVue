@@ -1,6 +1,6 @@
 import Router from 'vue-router'
 import HelloFromVux from '@/pages/home/HelloFromVux'
-import fundList from '@/pages/pdt/fundList'
+import FundList from '@/pages/pdt/fundList'
 export default new Router({
   routes: [
     {
@@ -10,8 +10,8 @@ export default new Router({
     },
     {
       path: '/fundList',
-      name: 'fundList',
-      component: fundList
+      name: 'FundList',
+      component: FundList
     }
   ]
 })
