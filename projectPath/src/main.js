@@ -8,15 +8,22 @@ import Home from './pages/home/HelloFromVux'
 import VueRouter from 'vue-router'
 import store from './vuex'
 import router from '@/router'
-import { XHeader,Grid, GridItem,Swiper,SwiperItem } from 'vux'
+import { Swiper,SwiperItem } from 'vux'
 import config from '@/config/configuration.js'
 import filters from '@/filter'
-Vue.component('x-header', XHeader)
-Vue.component('grid', Grid)
-Vue.component('grid-item', GridItem)
 Vue.component('swiper', Swiper)
 Vue.component('swiper-item', SwiperItem)
-
+//musi-ui组件
+import 'muse-ui/lib/styles/base.less';
+import { AppBar,Button,Card} from 'muse-ui';
+import 'muse-ui/lib/styles/theme.less';
+Vue.use(Button)
+Vue.use(AppBar)
+Vue.use(Card)
+//图标组建
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+Vue.component('icon', Icon)
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false

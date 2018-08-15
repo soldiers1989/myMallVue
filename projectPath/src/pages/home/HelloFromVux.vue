@@ -35,22 +35,13 @@ export default {
   },
   mounted:function(){
     let that = this;
-    //获取banner图信息
-   /* axios.get('http://58.251.50.25:8086/servlet/json?funcNo=1000162&group_id=1&ad_id=&opstation=,,,web')
-      .then(function (response) {
-        let results = response.data.results;//数据
-       that.$store.commit('setbannerList',results);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })*/
+ 
 
   }
 }
 </script>
 
-<style>
+<style >
   ol, ul, li {
     list-style-type: none;
   }
