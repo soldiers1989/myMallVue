@@ -1,5 +1,6 @@
 <template>
   <div class="fundList">
+<<<<<<< HEAD
 
 
 <mu-paper :z-depth="1" class="demo-loadmore-wrap">
@@ -25,6 +26,33 @@
   </mu-container>
 </mu-paper>
 
+=======
+ <mu-appbar style="width: 100%;" color="primary">
+    <mu-button icon slot="left">
+    <p style="height:100%"><icon name="chevron-left" scale="2"  /></p>
+    </mu-button>
+    <p style="text-align:center">基金</p>
+    <mu-button flat slot="right"><icon name="search" scale="2"  /></mu-button>
+    </mu-appbar>
+
+<mu-card style="width: 100%; max-width: 375px; margin: 0 auto;">
+  <mu-card-header title="Myron Avatar" sub-title="sub title">
+    <span style="float:right">货</span>
+  </mu-card-header>
+  <mu-card-header title="Myron Avatar" sub-title="sub title">
+    <span style="float:right">货</span>
+  </mu-card-header>
+  
+  <mu-card-text>
+    散落在指尖的阳光，我试着轻轻抓住光影的踪迹，它却在眉宇间投下一片淡淡的阴影。
+   
+  </mu-card-text>
+  <mu-card-actions>
+    <mu-button flat>Action 1</mu-button>
+    <mu-button flat>Action 2</mu-button>
+  </mu-card-actions>
+</mu-card>
+>>>>>>> 0e97bcf4e0b0bc184aeeaa4f496c80f01003ece8
   </div>
  
 </template>
