@@ -43,7 +43,7 @@ let webpackConfig = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader',
+        loaders: ['style', 'css', 'sass']
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
