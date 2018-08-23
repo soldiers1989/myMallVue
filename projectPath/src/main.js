@@ -8,9 +8,13 @@ import Home from './pages/home/HelloFromVux'
 import VueRouter from 'vue-router'
 import store from './vuex'
 import router from '@/router'
-import { Swiper,SwiperItem } from 'vux'
+
+import { Grid, GridItem,Swiper,SwiperItem } from 'vux'
 import config from '@/config/configuration.js'
 import filters from '@/filter'
+Vue.component('grid', Grid)
+Vue.component('grid-item', GridItem)
+
 Vue.component('swiper', Swiper)
 Vue.component('swiper-item', SwiperItem)
 //musi-ui组件
